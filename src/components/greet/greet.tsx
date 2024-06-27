@@ -1,9 +1,5 @@
-import React from 'react';
-
-type GreetProps = {
-  name?: string;
-};
+import { GreetProps } from './Greet.types';
 
 export const Greet = ({ name }: GreetProps) => {
-  return <div>Hello {name}</div>;
+  return <div>Hello {name ? name : 'Guest'}</div>;
 };
